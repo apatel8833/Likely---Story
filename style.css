@@ -1,0 +1,1443 @@
+@font-face {
+    font-family: at2;
+    src: url(font.ttf);
+}
+@font-face {
+    font-family: at3;
+    src: url(font2.ttf);
+}
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(199, 5, 15);
+    overflow-x: hidden;
+}
+.cur{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    font-family: at2;
+    display: none;
+}
+.ae{
+    position: absolute;
+    font-size: 60px;
+    font-weight: 300;
+    color: aliceblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#first{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+.navbar{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-family: at3;
+    position: fixed;
+    z-index: 9;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    /* position: fixed; */
+    
+}
+.navbar ul li {
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color:  black;
+    font-size: 18px;
+
+}
+.first{
+    position: absolute;
+    height: 50%;
+    width: 430%;
+    top: 15%;
+    z-index: 2;
+
+}
+.first>h1:nth-child(1){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 5%;
+
+
+}
+.first1{
+    position: absolute;
+    top: 15%;
+    height: 50%;
+    width: 200%;
+    z-index: 1;
+    color: aliceblue;
+    opacity: 0;
+    transform-origin: top;
+
+}
+.first1>h1{
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 0%;
+    
+
+
+}
+
+.first>h1:nth-child(2){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 50%;
+  
+
+
+}
+
+.sec{
+    position: absolute;
+    height: 50%;
+    width: 430%;
+    top: 55%;
+    z-index: 2;
+    /* background-color: #fff; */
+
+}
+.sec>h1:nth-child(1){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 5%;
+
+
+}
+
+.sec>h1:nth-child(2){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: -30%;
+  
+
+
+}
+.sec1{
+    position: absolute;
+    top: 55%;
+    height: 50%;
+    width: 200%;
+    z-index: 1;
+    color: aliceblue;
+    /* background-color: aquamarine; */
+    opacity: 0;
+    transform-origin: top;
+
+}
+.sec1>h1{
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 0%;
+    
+
+
+}
+
+#sec{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.third{
+    position: absolute;
+    height: 50%;
+    width: 430%;
+    top: -5%;
+    z-index: 2;
+    /* background-color: #fff; */
+
+}
+.third>h1:nth-child(1){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 5%;
+
+
+}
+
+.third>h1:nth-child(2){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 50%;
+  
+
+
+}
+.third1{
+    position: absolute;
+    top: -5%;
+    height: 50%;
+    width: 200%;
+    z-index: 1;
+    color: aliceblue;
+    /* background-color: aquamarine; */
+    opacity: 0;
+    /* transition: all .1s linear; */
+    transform-origin: top;
+
+}
+.third1>h1{
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 0%;
+    
+
+
+}
+
+.fourth{
+    position: absolute;
+    height: 50%;
+    width: 430%;
+    top: 38%;
+    z-index: 2;
+    /* background-color: #fff; */
+
+}
+.fourth>h1:nth-child(1){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 5%;
+
+
+}
+
+.fourth>h1:nth-child(2){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: -38%;
+  
+
+
+}
+.fourth1{
+    position: absolute;
+    top: 38%;
+    height: 50%;
+    width: 200%;
+    z-index: 1;
+    color: aliceblue;
+    /* background-color: aquamarine; */
+    opacity: 0;
+    transform-origin: top;
+
+}
+.fourth1>h1{
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 0%;
+    
+
+
+}
+
+#third{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.fifth{
+    position: absolute;
+    height: 50%;
+    width: 430%;
+    top: -20%;
+    z-index: 2;
+    /* background-color: #fff; */
+
+}
+.fifth>h1:nth-child(1){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 5%;
+
+
+}
+
+.fifth>h1:nth-child(2){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 50%;
+  
+
+
+}
+.fifth1{
+    position: absolute;
+    top: -20%;
+    height: 50%;
+    width: 200%;
+    z-index: 1;
+    color: aliceblue;
+    /* background-color: aquamarine; */
+    opacity: 0;
+    /* transition: all .1s linear; */
+    transform-origin: top;
+
+}
+.fifth1>h1{
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 0%;
+    
+
+
+}
+.sixth{
+    position: absolute;
+    height: 50%;
+    width: 430%;
+    top: 25%;
+    z-index: 2;
+    /* background-color: #fff; */
+
+}
+.sixth>h1:nth-child(1){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 5%;
+
+
+}
+
+.sixth>h1:nth-child(2){
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: -30%;
+  
+
+
+}
+.sixth1{
+    position: absolute;
+    top: 25%;
+    height: 50%;
+    width: 200%;
+    z-index: 1;
+    color: aliceblue;
+    /* background-color: aquamarine; */
+    opacity: 0;
+    transform-origin: top;
+
+}
+.sixth1>h1{
+    position: absolute;
+    font-size: 300px;
+    font-family: at2;
+    left: 0%;
+    
+
+
+}
+.scroll{
+    position: absolute;
+
+    height: 6%;
+    width: 200%;
+    left: -2%;
+    background-color: yellow;
+    top: 35%;
+    z-index: 9;
+    transform: rotate(-5deg);
+    display: none;
+    color: rgb(75, 73, 73);
+    font-family: at3;
+
+}
+.scroll>h5:nth-child(1){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    
+}
+.scroll>h5:nth-child(2){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    left: 50%;
+    
+}
+
+.scroll2{
+    position: absolute;
+
+    height: 6%;
+    width: 200%;
+    left: -2%;
+    background-color: yellow;
+    top: 77%;
+    z-index: 9;
+    transform: rotate(-5deg);
+    display: none;
+    color: rgb(75, 73, 73);
+    font-family: at3;
+
+}
+.scroll2>h5:nth-child(1){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    
+}
+.scroll2>h5:nth-child(2){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    left: 50%;
+    
+}
+.scroll3{
+    position: absolute;
+
+    height: 6%;
+    width: 200%;
+    left: -2%;
+    background-color: yellow;
+    top: 18%;
+    z-index: 9;
+    transform: rotate(-5deg);
+    display: none;
+    color: rgb(75, 73, 73);
+    font-family: at3;
+
+}
+.scroll3>h5:nth-child(1){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    
+}
+.scroll3>h5:nth-child(2){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    left: 50%;
+    
+}
+
+
+
+.scroll4{
+    position: absolute;
+
+    height: 6%;
+    width: 200%;
+    left: -2%;
+    background-color: yellow;
+    top: 60%;
+    z-index: 9;
+    transform: rotate(-5deg);
+    display: none;
+    color: rgb(75, 73, 73);
+    font-family: at3;
+
+}
+.scroll4>h5:nth-child(1){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    
+}
+.scroll4>h5:nth-child(2){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    left: 50%;
+    
+}
+.scroll5{
+    position: absolute;
+
+    height: 6%;
+    width: 200%;
+    left: -2%;
+    background-color: yellow;
+    top: 0%;
+    z-index: 9;
+    transform: rotate(-5deg);
+    display: none;
+    color: rgb(75, 73, 73);
+    font-family: at3;
+
+}
+.scroll5>h5:nth-child(1){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    
+}
+.scroll5>h5:nth-child(2){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    left: 50%;
+    
+}
+
+
+.scroll6{
+    position: absolute;
+
+    height: 6%;
+    width: 200%;
+    left: -2%;
+    background-color: yellow;
+    top: 50%;
+    z-index: 9;
+    transform: rotate(-5deg);
+    display: none;
+    color: rgb(75, 73, 73);
+    font-family: at3;
+
+}
+.scroll6>h5:nth-child(1){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    
+}
+.scroll6>h5:nth-child(2){
+    position: absolute;
+    top: 15%;
+    font-size: 20px;
+    left: 50%;
+    
+}
+
+
+
+img{
+    height: 320px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid white;
+    z-index: 99;
+    
+}
+.img1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    opacity: 0;
+    pointer-events:none;
+
+}
+.img2{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    opacity: 0;
+    pointer-events:none;
+    transform: translate(-50%,-50%);
+
+
+}
+.img3{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    opacity: 0;
+    pointer-events:none;
+    transform: translate(-50%,-50%);
+
+
+}
+.img4{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    opacity: 0;
+    pointer-events:none;
+
+}
+.img5{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    opacity: 0;
+    pointer-events:none;
+    transform: translate(-50%,-50%);
+
+}
+
+.img6{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    opacity: 0;
+    pointer-events:none;
+    transform: translate(-50%,-50%);
+
+}
+.svg1{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    position: fixed;
+    z-index: 9;
+}
+.svg2{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+
+
+.footer{
+    position: relative;
+    height: 30%;
+    width: 100%;
+    background-color: black;
+    font-family: at3;
+    bottom: 0%;
+}
+.footer>h5{
+    position: absolute;
+    color: rgb(103, 104, 105);
+    top: 40%;
+    left: 15%;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.footer>h4{
+    position: absolute;
+    color: rgb(103, 104, 105);
+    top: 40%;
+    right: 10%;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.t{
+    position: absolute;
+    right: 7%;
+    top: 35%;
+    color: white;
+    font-size: 30px;
+}
+.i{
+    position: absolute;
+    right: 2%;
+    top: 35%;
+    color: white;
+    font-size: 30px;
+}
+
+
+.dot1{
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: black;
+    right: 15%;
+    top: 13%;
+}
+.dot2{
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: black;
+    right: 21%;
+    top: 17%;
+    opacity: 0;
+}
+.dot3{
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: black;
+    right: 8%;
+    top: 17%;
+    opacity: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:500px){
+    .cur{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 999;
+        transform: translate(-50%,-50%);
+        pointer-events: none;
+        font-family: at2;
+        display: none;
+    }
+    .ae{
+        position: absolute;
+        font-size: 60px;
+        font-weight: 300;
+        color: aliceblue;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    #first{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    
+    }
+    .navbar{
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        font-family: at3;
+        position: fixed;
+        z-index: 9;
+    }
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        /* position: fixed; */
+        
+    }
+    .navbar ul li {
+        padding: 20px;
+    }
+    a{
+        text-decoration: none;
+        color:  black;
+        font-size: 18px;
+    
+    }
+    .first{
+        position: absolute;
+        height: 50%;
+        width:720%;
+        top: 30%;
+        z-index: 2;
+    
+    }
+    .first>h1:nth-child(1){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 5%;
+        letter-spacing: 3px;
+    
+    
+    }
+    .first1{
+        position: absolute;
+        top: 30%;
+        height: 50%;
+        width: 350%;
+        z-index: 1;
+        color: aliceblue;
+        opacity: 0;
+        transform-origin: top;
+    
+    }
+    .first1>h1{
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 0%;
+        
+    
+    
+    }
+    
+    .first>h1:nth-child(2){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 50%;
+      
+    
+    
+    }
+    
+    .sec{
+        position: absolute;
+        height: 50%;
+        width: 720%;
+        top: 55%;
+        z-index: 2;
+        /* background-color: #fff; */
+    
+    }
+    .sec>h1:nth-child(1){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 5%;
+    
+    
+    }
+    
+    .sec>h1:nth-child(2){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: -30%;
+      
+    
+    
+    }
+    .sec1{
+        position: absolute;
+        top: 55%;
+        height: 50%;
+        width: 350%;
+        z-index: 1;
+        color: aliceblue;
+        /* background-color: aquamarine; */
+        opacity: 0;
+        transform-origin: top;
+    
+    }
+    .sec1>h1{
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 0%;
+        
+    
+    
+    }
+    
+    #sec{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .third{
+        position: absolute;
+        height: 50%;
+        width: 720%;
+        top: -20%;
+        z-index: 2;
+        /* background-color: #fff; */
+    
+    }
+    .third>h1:nth-child(1){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 5%;
+    
+    
+    }
+    
+    .third>h1:nth-child(2){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 50%;
+      
+    
+    
+    }
+    .third1{
+        position: absolute;
+        top: -20%;
+        height: 50%;
+        width: 350%;
+        z-index: 1;
+        color: aliceblue;
+        /* background-color: aquamarine; */
+        opacity: 0;
+        /* transition: all .1s linear; */
+        transform-origin: top;
+    
+    }
+    .third1>h1{
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 0%;
+        
+    
+    
+    }
+    
+    .fourth{
+        position: absolute;
+        height: 50%;
+        width: 720%;
+        top: 5%;
+        z-index: 2;
+        /* background-color: #fff; */
+    
+    }
+    .fourth>h1:nth-child(1){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 5%;
+    
+    
+    }
+    
+    .fourth>h1:nth-child(2){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: -38%;
+      
+    
+    
+    }
+    .fourth1{
+        position: absolute;
+        top: 5%;
+        height: 50%;
+        width: 350%;
+        z-index: 1;
+        color: aliceblue;
+        /* background-color: aquamarine; */
+        opacity: 0;
+        transform-origin: top;
+    
+    }
+    .fourth1>h1{
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 0%;
+        
+    
+    
+    }
+    
+    #third{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .fifth{
+        position: absolute;
+        height: 50%;
+        width: 720%;
+        top: -68%;
+        z-index: 2;
+        /* background-color: #fff; */
+    
+    }
+    .fifth>h1:nth-child(1){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 5%;
+    
+    
+    }
+    
+    .fifth>h1:nth-child(2){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 50%;
+      
+    
+    
+    }
+    .fifth1{
+        position: absolute;
+        top: -68%;
+        height: 50%;
+        width: 350%;
+        z-index: 1;
+        color: aliceblue;
+        /* background-color: aquamarine; */
+        opacity: 0;
+        /* transition: all .1s linear; */
+        transform-origin: top;
+    
+    }
+    .fifth1>h1{
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 0%;
+        
+    
+    
+    }
+    .sixth{
+        position: absolute;
+        height: 50%;
+        width: 720%;
+        top: -40%;
+        z-index: 2;
+        /* background-color: #fff; */
+    
+    }
+    .sixth>h1:nth-child(1){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 5%;
+    
+    
+    }
+    
+    .sixth>h1:nth-child(2){
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: -30%;
+      
+    
+    
+    }
+    .sixth1{
+        position: absolute;
+        top: -40%;
+        height: 50%;
+        width: 350%;
+        z-index: 1;
+        color: aliceblue;
+        /* background-color: aquamarine; */
+        opacity: 0;
+        transform-origin: top;
+    
+    }
+    .sixth1>h1{
+        position: absolute;
+        font-size: 150px;
+        font-family: at2;
+        left: 0%;
+        
+    
+    
+    }
+    .scroll{
+        position: absolute;
+    
+        height: 6%;
+        width: 350%;
+        left: -2%;
+        background-color: yellow;
+        top: 35%;
+        z-index: 9;
+        transform: rotate(-5deg);
+        display: none;
+        color: rgb(75, 73, 73);
+        font-family: at3;
+        opacity: 0;
+    
+    }
+    .scroll>h5:nth-child(1){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        
+    }
+    .scroll>h5:nth-child(2){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        left: 50%;
+        
+    }
+    
+    .scroll2{
+        position: absolute;
+    
+        height: 6%;
+        width: 200%;
+        left: -2%;
+        background-color: yellow;
+        top: 77%;
+        z-index: 9;
+        transform: rotate(-5deg);
+        display: none;
+        color: rgb(75, 73, 73);
+        font-family: at3;
+        opacity: 0;
+    
+    }
+    .scroll2>h5:nth-child(1){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        
+    }
+    .scroll2>h5:nth-child(2){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        left: 50%;
+        
+    }
+    .scroll3{
+        position: absolute;
+    
+        height: 6%;
+        width: 200%;
+        left: -2%;
+        background-color: yellow;
+        top: 18%;
+        z-index: 9;
+        transform: rotate(-5deg);
+        display: none;
+        color: rgb(75, 73, 73);
+        font-family: at3;
+        opacity: 0;
+
+    
+    }
+    .scroll3>h5:nth-child(1){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        
+    }
+    .scroll3>h5:nth-child(2){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        left: 50%;
+        
+    }
+    
+    
+    
+    .scroll4{
+        position: absolute;
+    
+        height: 6%;
+        width: 200%;
+        left: -2%;
+        background-color: yellow;
+        top: 60%;
+        z-index: 9;
+        transform: rotate(-5deg);
+        display: none;
+        color: rgb(75, 73, 73);
+        font-family: at3;
+        opacity: 0;
+
+    
+    }
+    .scroll4>h5:nth-child(1){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        
+    }
+    .scroll4>h5:nth-child(2){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        left: 50%;
+        
+    }
+    .scroll5{
+        position: absolute;
+    
+        height: 6%;
+        width: 200%;
+        left: -2%;
+        background-color: yellow;
+        top: 0%;
+        z-index: 9;
+        transform: rotate(-5deg);
+        display: none;
+        color: rgb(75, 73, 73);
+        font-family: at3;
+        opacity: 0;
+
+    
+    }
+    .scroll5>h5:nth-child(1){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        
+    }
+    .scroll5>h5:nth-child(2){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        left: 50%;
+        
+    }
+    
+    
+    .scroll6{
+        position: absolute;
+    
+        height: 6%;
+        width: 200%;
+        left: -2%;
+        background-color: yellow;
+        top: 50%;
+        z-index: 9;
+        transform: rotate(-5deg);
+        display: none;
+        color: rgb(75, 73, 73);
+        font-family: at3;
+        opacity: 0;
+
+    
+    }
+    .scroll6>h5:nth-child(1){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        
+    }
+    .scroll6>h5:nth-child(2){
+        position: absolute;
+        top: 15%;
+        font-size: 20px;
+        left: 50%;
+        
+    }
+    
+    
+    
+    img{
+        height: 220px;
+        width: 150px;
+        object-fit: cover;
+        object-position: center;
+        border: 5px solid white;
+        z-index: 99;
+        
+    }
+    .img1{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        opacity: 0;
+        pointer-events:none;
+    
+    }
+    .img2{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        opacity: 0;
+        pointer-events:none;
+        transform: translate(-50%,-50%);
+    
+    
+    }
+    .img3{
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        opacity: 0;
+        pointer-events:none;
+        transform: translate(-50%,-50%);
+    
+    
+    }
+    .img4{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        opacity: 0;
+        pointer-events:none;
+    
+    }
+    .img5{
+        position: absolute;
+        top: -10%;
+        left: 10%;
+        opacity: 0;
+        pointer-events:none;
+        transform: translate(-50%,-50%);
+    
+    }
+    
+    .img6{
+        position: absolute;
+        top: -10%;
+        left: 10%;
+        opacity: 0;
+        pointer-events:none;
+        transform: translate(-50%,-50%);
+    
+    }
+    .svg1{
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        position: fixed;
+        z-index: 9;
+    }
+    .svg2{
+        position: absolute;
+        top: 25%;
+        left: 2%;
+    }
+    
+    
+    .footer{
+        position: relative;
+        height: 30%;
+        width: 100%;
+        background-color: black;
+        font-family: at3;
+        bottom: 0%;
+    }
+    .footer>h5{
+        position: absolute;
+        color: rgb(103, 104, 105);
+        top: 80%;
+        left: 5%;
+        font-size: 15px;
+        font-weight: 300;
+    
+    }
+    
+    .footer>h4{
+        position: absolute;
+        color: rgb(103, 104, 105);
+        top: 65%;
+        left: 5%;
+        font-size: 15px;
+        font-weight: 300;
+    
+    }
+    .t{
+        position: absolute;
+        right: 17%;
+        top: 35%;
+        color: white;
+        font-size: 20px;
+    }
+    .i{
+        position: absolute;
+        right: 5%;
+        top: 35%;
+        color: white;
+        font-size: 20px;
+    }
+    
+    
+    .dot1{
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background-color: black;
+        right: 15%;
+        top: 13%;
+    }
+    .dot2{
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background-color: black;
+        right: 21%;
+        top: 17%;
+        opacity: 0;
+    }
+    .dot3{
+        position: absolute;
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background-color: black;
+        right: 8%;
+        top: 17%;
+        opacity: 0;
+    
+    }
+}
+
