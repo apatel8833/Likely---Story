@@ -1303,6 +1303,8 @@ img{
         left: 10%;
         opacity: 0;
         pointer-events:none;
+        display: none;
+        opacity: 0;
     
     }
     .img2{
@@ -1312,6 +1314,8 @@ img{
         opacity: 0;
         pointer-events:none;
         transform: translate(-50%,-50%);
+        display: none;
+        opacity: 0;
     
     
     }
@@ -1322,6 +1326,8 @@ img{
         opacity: 0;
         pointer-events:none;
         transform: translate(-50%,-50%);
+        display: none;
+        opacity: 0;
     
     
     }
@@ -1331,6 +1337,8 @@ img{
         left: 10%;
         opacity: 0;
         pointer-events:none;
+        display: none;
+        opacity: 0;
     
     }
     .img5{
@@ -1340,6 +1348,8 @@ img{
         opacity: 0;
         pointer-events:none;
         transform: translate(-50%,-50%);
+        display: none;
+        opacity: 0;
     
     }
     
@@ -1350,6 +1360,8 @@ img{
         opacity: 0;
         pointer-events:none;
         transform: translate(-50%,-50%);
+        display: none;
+        opacity: 0;
     
     }
     .svg1{
